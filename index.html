@@ -1,162 +1,881 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
-.w3-bar-block .w3-bar-item {padding:20px}
-</style>
+    <meta charset="UTF-8">
+    <meta name="description" content="Păltiniș este o atracție pentru turiști atât pe timp de iarnă, când se poate schia, cât și pe timp de vară, pentru aerul curat și priveliștile încântătoare.">
+    <meta name="keywords" content="Statiune, Paltinis, Cazare, Cabana, Relaxare, Ieftin, Minunat">
+    <meta name="author" content="Anuta Irinel">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link rel="icon" href="logo.jpg">
+    <title>Statiunea Paltinis</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*BUTON MENIU ----------------------------------------------*/
+/*POZA MENIU*/
+.poza_meniu {
+  position: fixed;
+  width: 25px;
+  height: 25px;
+  top: 0;
+  z-index: 1001;
+  border: 2px solid black;
+  border-radius: 20%;
+}
+
+/*BUTON*/
+#buton_meniu {
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  top: 0;
+  right: 0;
+  display: none;
+  z-index: 101;
+}
+
+/*MENIU---------------------------------------- */
+header nav {
+  background-color: black;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  z-index: 100;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  text-align: center;
+  font-size: 12px;
+  width: 20%;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+header nav a:hover {
+  background: rgb(190, 190, 190);
+  color: black;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+
+/*BUN VENIT ---------------------------------------------------------*/
+.bun_venit {
+  position: relative;
+  text-align: center;
+}
+
+.mesaj_s {
+  font-size: 48px;
+  font-weight: bolder;
+  font-family: "Oswald";
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+
+.mesaj_m {
+  font-size: 19px;
+  font-family: "Oswald";
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+/*PRIMA POZA------------------------------------------------------ */
+#prima_poza {
+  width: 100%;
+  height: 700px;
+  background-image: url("poze/prima_poza/4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  transition: 2s;
+}
+
+/*CONTAINER----------------------------------------------- */
+.container {
+  width: 98.5vw;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  background-color: rgb(230, 230, 230);
+  padding-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*CONTAINER STANGA---------------------------------------------------------------------------------------------------------- */
+.container_stanga {
+  width: 70%;
+  height: auto;
+  padding: 10px;
+}
+
+/*CONTAINER STANGA 1----------------------------------------------- */
+.container_stanga .container_stanga_1 {
+  box-shadow: 10px 10px 15px rgb(173, 173, 173);
+  height: max-content;
+  background-color: white;
+  margin: 8px 16px;
+  padding: 30px;
+}
+
+.container_stanga .container_stanga_1:hover {
+  box-shadow: 10px 10px 15px rgb(90, 90, 90);
+}
+
+.container_stanga .container_stanga_1 .titlu {
+  font-family: "Oswald";
+  font-weight: 400;
+  margin: 10px 0;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.container_stanga .container_stanga_1 .descriere {
+  font-family: "Oswald";
+}
+
+.container_stanga .container_stanga_1 .descriere .data {
+  opacity: 0.8;
+}
+
+.container_stanga .container_stanga_1 .poza_2 {
+  width: 100%;
+}
+
+.container_stanga .container_stanga_1 .text_descriere {
+  text-align: justify;
+  font-family: "Open Sans";
+  line-height: 1.5;
+  font-size: 17px;
+  margin-top: 30px;
+}
+
+/*CONTAINER STANGA 2----------------------------------------------- */
+.container_stanga .container_stanga_2 {
+  box-shadow: 10px 10px 15px rgb(173, 173, 173);
+  height: max-content;
+  background-color: white;
+  margin: 38px 16px;
+  padding: 30px;
+}
+
+.container_stanga .container_stanga_2:hover {
+  box-shadow: 10px 10px 15px rgb(90, 90, 90);
+}
+
+.container_stanga .container_stanga_2 .pozitionare_geografica {
+  font-family: "Oswald";
+  font-weight: 400;
+  margin: 10px 0;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.container_stanga .container_stanga_2 .harta {
+  width: 600px;
+  height: 450px;
+}
+
+.container_stanga .container_stanga_2 .descriere_pozitionare_geografica {
+  text-align: justify;
+  font-family: "Open Sans";
+  line-height: 1.5;
+  font-size: 17px;
+  margin-top: 20px;
+}
+
+/*CONTAINER STANGA 3----------------------------------------------- */
+.container_stanga .container_stanga_3 {
+  box-shadow: 10px 10px 15px rgb(173, 173, 173);
+  height: max-content;
+  background-color: white;
+  margin: 8px 16px;
+  padding: 30px;
+}
+
+.container_stanga .container_stanga_3:hover {
+  box-shadow: 10px 10px 15px rgb(90, 90, 90);
+}
+
+.container_stanga .container_stanga_3 .cum_ajungi {
+  font-family: "Oswald";
+  font-weight: 400;
+  margin: 10px 0;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.container_stanga .container_stanga_3 .text_cum_ajungi {
+  text-align: justify;
+  font-family: "Open Sans";
+  line-height: 1.5;
+  font-size: 17px;
+  margin-top: 20px;
+}
+
+.container_stanga .container_stanga_3 .traseu {
+  width: 100%;
+}
+
+/*CONTAINER STANGA 4----------------------------------------------- */
+.container_stanga .container_stanga_4 {
+  box-shadow: 10px 10px 15px rgb(173, 173, 173);
+  height: max-content;
+  background-color: white;
+  margin: 8px 16px;
+  padding: 30px;
+}
+
+.container_stanga .container_stanga_4:hover {
+  box-shadow: 10px 10px 15px rgb(90, 90, 90);
+}
+
+.container_stanga .container_stanga_4 .ce_faci_la_paltinis {
+  font-family: "Oswald";
+  font-weight: 400;
+  margin: 10px 0;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.container_stanga .container_stanga_4 .text_ce_faci_la_paltinis {
+  text-align: justify;
+  font-family: "Open Sans";
+  line-height: 1.5;
+  font-size: 17px;
+  margin-top: 20px;
+}
+
+.container_stanga .container_stanga_4 .text_ski {
+  text-align: justify;
+  font-family: "Open Sans";
+  line-height: 1.5;
+  font-size: 17px;
+  margin-top: 20px;
+}
+
+.container_stanga .container_stanga_4 .poza_ski {
+  width: 100%;
+}
+
+.container_stanga .container_stanga_4 ol {
+  text-align: left;
+  font-family: "Open Sans";
+  line-height: 1.5;
+  font-size: 17px;
+}
+
+.container_stanga .container_stanga_4 ol ul li {
+  transform: translateX(20px);
+  list-style-type: square;
+
+}
+
+.container_stanga .container_stanga_4 .text_trasee {
+  text-align: justify;
+  font-family: "Open Sans";
+  line-height: 1.5;
+  font-size: 17px;
+  margin-top: 20px;
+}
+
+.container_stanga .container_stanga_4 .poza_trasee {
+  width: 100%;
+}
+
+.container_stanga .container_stanga_4 .text_munte {
+  text-align: justify;
+  font-family: "Open Sans";
+  line-height: 1.5;
+  font-size: 17px;
+  margin-top: 20px;
+}
+
+.container_stanga .container_stanga_4 .poza_munte {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*CONTAINER DREAPTA----------------------------------------------------------------------------------------------------- */
+.container_dreapta {
+  width: 400px;
+  height: max-content;
+  padding: 20px;
+}
+
+/*CONTAINER DREAPTA 1----------------------------------------------- */
+.container_dreapta .container_dreapta_1 {
+  box-shadow: 10px 10px 15px rgb(173, 173, 173);
+  height: max-content;
+}
+
+.container_dreapta .container_dreapta_1:hover {
+  box-shadow: 10px 10px 15px rgb(90, 90, 90);
+}
+
+.container_dreapta .container_dreapta_1 .poza_schit {
+  background-image: url('poze/container_dreapta/schitul_paltinis.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  width: 100%;
+  height: 200px;
+}
+
+.container_dreapta .container_dreapta_1 .text_schit {
+  background-color: black;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  height: max-content;
+  text-align: left;
+  padding: 10px;
+}
+
+/*CONTAINER DREAPTA 2----------------------------------------------- */
+.container_dreapta .container_dreapta_2 {
+  box-shadow: 10px 10px 15px rgb(173, 173, 173);
+  height: max-content;
+}
+
+.container_dreapta .container_dreapta_2:hover {
+  box-shadow: 10px 10px 15px rgb(90, 90, 90);
+}
+
+.container_dreapta .container_dreapta_2 .postari_populare {
+  background-color: black;
+  color: white;
+  margin-top: 20px;
+  padding: 20px;
+  text-align: left;
+  font-family: "Oswald";
+}
+
+/*GALERIE-------------------------------- */
+.container_dreapta .container_dreapta_2 .galerie .galerie_poze {
+  border: 1px solid #ccc;
+  width: 94.5%;
+  padding: 10px;
+  background-color: white;
+}
+
+.container_dreapta .container_dreapta_2 .galerie .galerie_poze:hover {
+  border: 1px solid #777;
+}
+
+.container_dreapta .container_dreapta_2 .galerie .galerie_poze img {
+  width: 100%;
+  height: 30vh;
+}
+
+/*CONTAINER DREAPTA 3----------------------------------------------- */
+.container_dreapta .container_dreapta_3 {
+  box-shadow: 10px 10px 15px rgb(173, 173, 173);
+  height: max-content;
+}
+
+.container_dreapta .container_dreapta_3:hover {
+  box-shadow: 10px 10px 15px rgb(90, 90, 90);
+}
+
+.container_dreapta .container_dreapta_3 .tags {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: left;
+  font-family: "Oswald";
+  margin-top: 20px;
+}
+
+.container_dreapta .container_dreapta_3 .container_taguri {
+  padding: 20px;
+  background-color: white;
+  height: max-content;
+  text-align: left;
+}
+
+.container_dreapta .container_dreapta_3 .container_taguri span:nth-child(1) {
+  color: #f1f1f1;
+  background-color: #000;
+  font-size: 15px;
+}
+
+.container_dreapta .container_dreapta_3 .container_taguri span {
+  color: #000;
+  background-color: #f1f1f1;
+  font-size: 12px;
+  display: inline-block;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: center;
+  font-family: "Open Sans";
+  margin-top: 20px;
+  line-height: 1.5;
+}
+
+/*CONTAINER DREAPTA 4----------------------------------------------- */
+.container_dreapta .container_dreapta_4 {
+  box-shadow: 10px 10px 15px rgb(173, 173, 173);
+  height: max-content;
+}
+
+.container_dreapta .container_dreapta_4:hover {
+  box-shadow: 10px 10px 15px rgb(90, 90, 90);
+}
+
+.container_dreapta .container_dreapta_4 .urmareste {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: left;
+  font-family: "Oswald";
+  margin-top: 20px;
+}
+
+.container_dreapta .container_dreapta_4 .social_media {
+  width: 100%;
+  height: max-content;
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.container_dreapta .container_dreapta_4 .social_media .poza_social_media {
+  width: 15%;
+}
+
+/*FOOTER-------------------------------------------------------------------------------------------------------------------    */
+footer {
+  position: relative;
+  bottom: 0;
+  transition: 2s;
+  background-color: #616161;
+  height: max-content;
+}
+
+.footer {
+  padding: 60px;
+}
+
+footer .link {
+  padding: 15px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  font-family: Verdana, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  width: max-content;
+}
+
+footer .copyright {
+  position: relative;
+  top: 40px;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 30px;
+}
+
+
+
+
+
+
+/*RESPONSIVE PAGE ------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width:600px) {
+
+  /*MENIU---------------------------------------- */
+  header {
+    position: fixed;
+    transform: rotateX(-90deg);
+    background-color: black;
+    height: 100vh;
+    transition: 1s;
+    width: 170px;
+    z-index: 100;
+  }
+
+  header nav {
+    position: relative;
+    top: 0px;
+    background-color: black;
+    padding: 10px;
+    height: max-content;
+    display: block;
+    width: max-content;
+  }
+
+  header nav a {
+    width: 100%;
+    position: sticky;
+    display: block;
+    transition: 0.5s;
+
+  }
+
+  header nav a:hover {
+    font-size: 12px;
+  }
+
+  header nav a:nth-child(1) {
+    color: yellow;
+  }
+
+  #buton_meniu {
+    display: block;
+  }
+}
+
+@media screen and (max-width:960px) {
+
+  /*CONTAINER----------------------------------------------- */
+  .container {
+    display: block;
+    justify-content: space-between;
+  }
+
+  /*CONTAINER STANGA-------------------------------------------------------------- */
+  .container_stanga {
+    width: 95%;
+    height: auto;
+    padding: 10px;
+  }
+
+  /*CONTAINER STANGA 2-------------------------------------------------------------- */
+  .container_stanga .container_stanga_2 .harta {
+    width: 100%;
+    height: 300px;
+  }
+
+  /*CONTAINER DREAPTA-------------------------------------------------------------- */
+  .container_dreapta {
+    width: 95%;
+    height: auto;
+    padding: 10px;
+  }
+
+  /*CONTAINER DREAPTA-------------------------------------------------------------- */
+  /*GALERIE-------------------------------- */
+  .container_dreapta .container_dreapta_2 .galerie {
+    padding: 0;
+  }
+
+  .container_dreapta .container_dreapta_2 .galerie .galerie_poze {
+    width: 50%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+
+
+
+
+
+
+
+/*ANIMATII--------------------------------------------------------------------------------------------------------------------------------------------*/
+/* DESCHIDE MENIUL------------------- */
+@keyframes animatie_open {
+  from {
+    transform: rotateX(-90deg);
+  }
+
+  to {
+    transform: rotateX(0deg);
+  }
+}
+
+/* ASCUNDE MENIUL------------------------ */
+@keyframes animatie_close {
+  from {
+    transform: rotateX(0deg);
+  }
+
+  to {
+    transform: rotateX(-90deg);
+  }
+}
+  </style>
 </head>
+
 <body>
+    <div id="link_revenire" style="position:absolute; top:0; left:0"></div>
+    <button id="buton_meniu" onclick="myfunction()"><img class="poza_meniu" id="poza_meniu" src="open_menu.jpg"
+            alt="open_meniu"></button>
+    <!--MENIU---------------------------->
+    <header id="nav_bar">
+        <nav>
+            <a href="index.html">ACASA</a>
+            <a href="php/devizitat.php">DE VIZITAT</a>
+            <a href="php/cazare.php">CAZARE</a>
+            <a href="php/contact.php">CONTACT</a>
+        </nav>
+    </header>
+    <!--BUN VENIT-------------------->
+    <div class="bun_venit">
+        <p class="mesaj_s">Statiune Păltiniș</p>
+        <p class="mesaj_m">Bine ați venit</p>
+    </div>
+    <!--PRIMA POZA------------------>
+    <div id="prima_poza"></div>
+    <!--CONTANIER------------------->
+    <div class="container">
+        <!--CONTANIER STANGA--------------------------------------------------------------------------->
+        <div class="container_stanga">
+            <!--CONTANIER STANGA 1------------------->
+            <div class="container_stanga_1">
+                <h3 class="titlu">Statiunea Păltiniș</h3>
+                <p class="descriere">Scurta descriere, <span class="data">16 Iulie, 2022</span></p>
+                <img class="poza_2" src="poze/container_stanga/1.jpg">
+                <p class="text_descriere">
+                    <b>Statiunea Paltinis</b> este una dintre variantele preferate de mulți turisti, pasionați ai
+                    sporturilor de iarna sau a plimbarilor in aer liber, în a petrece un weekend in aceasta locatie,
+                    vizand printre altele de la Rezervatia Iezerele Cindrelului pana la faimoasele lacuri glaciare.
+                    Odata ajunsi la Paltinis, turistii pot schia in sezonul de iarna, sa exploreze traseele impadurite
+                    din apropiere pe rutele destinate special sau sa admire privelistea naturala deosebita a zonei. Se
+                    pot efectua drumetii la Poiana Oncesti, Vf. Oncesti, Stana Gaujoara si Poiana Lupilor.
+                </p>
+            </div>
+            <!--CONTANIER STANGA 2------------------->
+            <div class="container_stanga_2">
+                <h3 class="pozitionare_geografica">Poziționare geografică</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44614.369145759956!2d23.86554065117289!3d45.66290843204078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474c4f837498974f%3A0xe86af4856019b0e8!2zUMSDbHRpbmnImSA1NTAwMDE!5e0!3m2!1sro!2sro!4v1657353416240!5m2!1sro!2sro"
+                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    class="harta"></iframe>
+                <p class="descriere_pozitionare_geografica">
+                    <b>Statiunea</b> turistica Paltinis, aflata pe versantul nord-estic al Muntilor Cindrel, la numai 32
+                    km distanta de Municipiul Sibiu, este cea mai veche statiune situata la cea mai mare altitudine
+                    (1442 m) din Romania si dispune de oferte de cazare in hoteluri sau vile si mijloace de transport pe
+                    cablu. <br>Așezarea întemeiată la sfârşitul secolului al XIX-lea, în mijlocul unei păduri de
+                    conifere, pe versantul nord-estic al Munților Cindrel este un loc foarte plăcut pentru petrecerea
+                    vacanțelor datorită aerului alpin deosebit de curat, puternic ozonizat. Masivul Cindrel, cu culmile
+                    sale domoale și platouri largi este ideal pentru practicarea schiului de fond. În timpul iernii
+                    stațiunea Păltiniș este un excelent loc pentru practicarea sporturilor de iarnă. <br>Ninsorile
+                    transformă multe din pantele împrejurimilor, în veritabile pârtii de schi sau săniuș. Cunoscută ca
+                    stațiune a sporturilor albe, Păltinișul are piste special amenajate, de la cele mai accesibile celor
+                    care încep să deslușească tainele acestui sport până la cele cu mai mai mare grad de dificultate
+                    agreate de schiorii cu experiență. <br>Vara, stațiunea Păltiniș oferă multiple posibilități de
+                    recreere, cum ar fi terenuri de sport și trasee turistice, care, prin frumusețea peisajului
+                    înconjurător, aerul pur al pădurilor de conifere, creează o atmosfera de liniște și deconectare.
+                </p>
+            </div>
+            <!--CONTANIER STANGA 3------------------->
+            <div class="container_stanga_3">
+                <h3 class="cum_ajungi">Cum ajungi în stațiunea Păltiniș</h3>
+                <a href="poze/container_stanga/traseu.jpg" target="_blank"><img class="traseu"
+                        src="poze/container_stanga/traseu.jpg"></a>
+                <p class="text_cum_ajungi">
+                    Staţiunea Păltiniş se află situată la 32 km de Sibiu şi este legată de oraş printr-o şosea modernă
+                    care străbate un peisaj de vis. Cei care merg la Sibiu cu trenul au asigurată zilnic legătura cu
+                    Păltiniş cu mijloace de transport în comun, pe traseul 22, care porneşte din Gara principală a
+                    municipiului şi are ca staţie ultimă staţiunea din Munţii Cindrel.
+                </p>
+            </div>
+            <!--CONTANIER STANGA 4------------------->
+            <div class="container_stanga_4">
+                <h3 class="ce_faci_la_paltinis  ">Ce poți face în Păltiniș</h3>
+                <p class="text_ce_faci_la_paltinis">
+                    Staţiunea Păltiniş este una dintre variantele preferate de mulţi turisti, pasionaţi ai sporturilor
+                    de iarnă sau a plimbărilor în aer liber. Vara Păltinișul se transformă într-un loc destinat bunei
+                    dispoziții. <br>Arena Platoș devine un imens parc de distracții.Pe o suprafață de aproape 75.000 de
+                    metri pătrați au fost instalate sănii de vară, distracția preferată de turiști. Există trasee de
+                    biciclete, bile de zorbing, o alee cu povești, un parc cu animale, un teren de fotbal cu apă și
+                    multe alte modalități de a petrece timpul liber.<br>Odată ajunşi la Păltiniş, turiştii pot schia în
+                    sezonul de iarnă, iar primăvara, vara şi toamnă pot să exploreze traseele împădurite din apropiere
+                    pe rutele destinate special sau să admire priveliştea naturală deosebită a zonei.
+                </p><br>
+                <h4 style="text-align:left; font-size: x-large;">Pârtii de schi în Păltiniș</h4><br>
+                <img class="poza_ski" src="poze/container_stanga/ski.jpg">
+                <p class="text_ski">
+                    Condiţiile de schi sunt excelente începând din decembrie şi până în aprilie. Pârtiile din staţiune
+                    sunt accesibile pentru toti împătimiţii sporturilor de iarnă.
+                </p><br>
+                <h4 class="partii_de_ski" style="font-size:1.5em; text-align:left;">Statiunea Păltiniș – Partii de schi
+                </h4>
+                <ol>
+                    <li>Oncești I – dificultate mediu</li>
+                    <ul>
+                        <li>Lungime – 1150 m</li>
+                    </ul>
+                    <li>Oncești II – dificultate ușor</li>
+                    <ul>
+                        <li>Lungime – 450</li>
+                    </ul>
+                    <li>Pârtia Platos</li>
+                    <ul>
+                        <li>Lungime – 520 m</li>
+                    </ul>
+                    <li>Pârtia Panorama Sibiului</li>
+                    <ul>
+                        <li>Lungime – 600m</li>
+                    </ul>
+                    <li>Pârtia Poiana Poplacii</li>
+                    <ul>
+                        <li>Lungime – 600m</li>
+                    </ul>
+                    <li>Pârtia Arena</li>
+                    <ul>
+                        <li>Lungime – 240m</li>
+                    </ul>
+                    <li>Partia Soarelui</li>
+                    <ul>
+                        <li>Lungime – 640m</li>
+                    </ul>
+                </ol><br>
+                <h4 style="text-align:left; font-size: x-large;">Trasee montane din Păltiniș</h4><br>
+                <img class="poza_trasee" src="poze/container_stanga/trasee.jpg">
+                <p class="text_trasee">
+                    <b>Vara</b> şi toamna, turiștii pot să exploreze traseele împădurite din apropiere de stațiunea
+                    Păltiniș pe rutele destinate special sau să admire priveliştea naturală deosebită a zonei. Traseele
+                    de drumeţie şi de cicloturism din Munții Cindrel sunt de dificultate medie, accesibile tuturor
+                    categoriilor de drumeţi, tot timpul anului. Accesul se face din localităţi ale regiunii Mărginimea
+                    Sibiului şi din staţiunea Păltiniş.
+                </p><br>
+                <h4 style="text-align:left; font-size: x-large;">Munții și rezervații naturale</h4><br>
+                <img class="poza_munte" src="poze/container_stanga/munte.jpg">
+                <p class="text_munte">
+                    <b>Vara</b> şi toamna, turiștii pot să exploreze traseele împădurite din apropiere de stațiunea
+                    Păltiniș pe rutele destinate special sau să admire priveliştea naturală deosebită a zonei. Traseele
+                    de drumeţie şi de cicloturism din Munții Cindrel sunt de dificultate medie, accesibile tuturor
+                    categoriilor de drumeţi, tot timpul anului. Accesul se face din localităţi ale regiunii Mărginimea
+                    Sibiului şi din staţiunea Păltiniş.
+                </p><br>
+            </div>
+        </div>
 
-<!-- Sidebar (hidden by default) -->
-<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()"
-  class="w3-bar-item w3-button">Close Menu</a>
-  <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Food</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
-</nav>
+        <!--CONTANIER DREAPTA---------------------------------------------------->
+        <div class="container_dreapta">
+            <!--CONTANIER DREAPTA 1------------------->
+            <div class="container_dreapta_1">
+                <p class="poza_schit"></p>
+                <p class="text_schit"><b style="font-size:large;">Schitul Păltiniș</b><br><br> Schitul Paltinis cu
+                    biserica acestuia - Biserica Schimbarea la Fata - este unul dintre cele mai cautate locuri din
+                    judetul Sibiu. Situata la intrarea in statiunea Paltinis, Biserica Schitului este situata la o
+                    altitudine de 1.350 de metri altitudine.</p>
+            </div>
+            <!--CONTANIER DREAPTA 2------------------->
+            <div class="container_dreapta_2">
+                <h3 class="postari_populare">Postări populare</h3>
+                <!--GALERIE-->
+                <div class="galerie">
+                    <div class="galerie_poze">
+                        <a target="_blank" href="poze/container_dreapta/1.jpg">
+                            <img src="poze/container_dreapta/1.jpg" alt="paltinis">
+                        </a>
+                    </div>
 
-<!-- Top menu -->
-<div class="w3-top">
-  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
-    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
-    <div class="w3-right w3-padding-16">Mail</div>
-    <div class="w3-center w3-padding-16">My Food</div>
-  </div>
-</div>
-  
-<!-- !PAGE CONTENT! -->
-<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+                    <div class="galerie_poze">
+                        <a target="_blank" href="poze/container_dreapta/2.jpg">
+                            <img src="poze/container_dreapta/2.jpg" alt="paltinis">
+                        </a>
+                    </div>
 
-  <!-- First Photo Grid-->
-  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
-    <div class="w3-quarter">
-      <img src="/w3images/sandwich.jpg" alt="Sandwich" style="width:100%">
-      <h3>The Perfect Sandwich, A Real NYC Classic</h3>
-      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="/w3images/steak.jpg" alt="Steak" style="width:100%">
-      <h3>Let Me Tell You About This Steak</h3>
-      <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="/w3images/cherries.jpg" alt="Cherries" style="width:100%">
-      <h3>Cherries, interrupted</h3>
-      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-      <p>What else?</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="/w3images/wine.jpg" alt="Pasta and Wine" style="width:100%">
-      <h3>Once Again, Robust Wine and Vegetable Pasta</h3>
-      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-    </div>
-  </div>
-  
-  <!-- Second Photo Grid-->
-  <div class="w3-row-padding w3-padding-16 w3-center">
-    <div class="w3-quarter">
-      <img src="/w3images/popsicle.jpg" alt="Popsicle" style="width:100%">
-      <h3>All I Need Is a Popsicle</h3>
-      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="/w3images/salmon.jpg" alt="Salmon" style="width:100%">
-      <h3>Salmon For Your Skin</h3>
-      <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="/w3images/sandwich.jpg" alt="Sandwich" style="width:100%">
-      <h3>The Perfect Sandwich, A Real Classic</h3>
-      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="/w3images/croissant.jpg" alt="Croissant" style="width:100%">
-      <h3>Le French</h3>
-      <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-    </div>
-  </div>
+                    <div class="galerie_poze">
+                        <a target="_blank" href="poze/container_dreapta/3.jpg">
+                            <img src="poze/container_dreapta/3.jpg" alt="paltinis">
+                        </a>
+                    </div>
 
-  <!-- Pagination -->
-  <div class="w3-center w3-padding-32">
-    <div class="w3-bar">
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
-      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+                    <div class="galerie_poze">
+                        <a target="_blank" href="poze/container_dreapta/4.jpg">
+                            <img src="poze/container_dreapta/4.jpg" alt="paltinis">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--CONTANIER DREAPTA 3------------------->
+            <div class="container_dreapta_3">
+                <h3 class="tags">Tag-uri</h3>
+                <div class="container_taguri">
+                    <span>Relaxare</span>
+                    <span>Munte</span>
+                    <span>Vacanta</span>
+                    <span>Concediu</span>
+                    <span>Europa</span>
+                    <span>Păltiniș</span>
+                    <span>Romania</span>
+                    <span>Schi</span>
+                    <span>Cabane</span>
+                    <span>Aer curat</span>
+                    <span>Peisaje</span>
+                </div>
+            </div>
+            <!--CONTANIER DREAPTA 4------------------->
+            <div class="container_dreapta_4">
+                <h3 class="urmareste">Urmariține și pe socila-media</h3>
+                <div class="social_media">
+                    <a href="#"><img src="poze/container_dreapta/social_media/facebook.jpg" class="poza_social_media"
+                            title="Facebook"></img></a>
+                    <a href="#"><img src="poze/container_dreapta/social_media/instagram.jpg" class="poza_social_media"
+                            title="Instagram"></img></a>
+                    <a href="#"><img src="poze/container_dreapta/social_media/linkedin.jpg" class="poza_social_media"
+                            title="Linkedin"></img></a>
+                    <a href="#"><img src="poze/container_dreapta/social_media/twitter.jpg" class="poza_social_media"
+                            title="Twitter"></img></a>
+                    <a href="#"><img src="poze/container_dreapta/social_media/whatsapp.jpg" class="poza_social_media"
+                            title="WhatsApp"></img></a>
+                    <a href="#"><img src="poze/container_dreapta/social_media/youtube.jpg" class="poza_social_media"
+                            title="YouTube"></img></a>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-  
-  <hr id="about">
-
-  <!-- About Section -->
-  <div class="w3-container w3-padding-32 w3-center">  
-    <h3>About Me, The Food Man</h3><br>
-    <img src="/w3images/chef.jpg" alt="Me" class="w3-image" style="display:block;margin:auto" width="800" height="533">
-    <div class="w3-padding-32">
-      <h4><b>I am Who I Am!</b></h4>
-      <h6><i>With Passion For Real, Good Food</i></h6>
-      <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-    </div>
-  </div>
-  <hr>
-  
-  <!-- Footer -->
-  <footer class="w3-row-padding w3-padding-32">
-    <div class="w3-third">
-      <h3>FOOTER</h3>
-      <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-    </div>
-  
-    <div class="w3-third">
-      <h3>BLOG POSTS</h3>
-      <ul class="w3-ul w3-hoverable">
-        <li class="w3-padding-16">
-          <img src="/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
-          <span class="w3-large">Lorem</span><br>
-          <span>Sed mattis nunc</span>
-        </li>
-        <li class="w3-padding-16">
-          <img src="/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
-          <span class="w3-large">Ipsum</span><br>
-          <span>Praes tinci sed</span>
-        </li> 
-      </ul>
-    </div>
-
-    <div class="w3-third w3-serif">
-      <h3>POPULAR TAGS</h3>
-      <p>
-        <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dinner</span>
-        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Salmon</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">France</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Drinks</span>
-        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Flavors</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Cuisine</span>
-        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Chicken</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dressing</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fried</span>
-        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fish</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Duck</span>
-      </p>
-    </div>
-  </footer>
-
-<!-- End page content -->
-</div>
-
+    <!--FOOTER-------------------->
+    <footer>
+        <div class="footer">
+            <a href="#link_revenire" class="link">Începutul paginii</a><br>
+            <span class="copyright">&copy; 2022 Staiunea Paltinis</span>
+        </div>
+    </footer>
+</body>
+<script src="meniu.js"></script>
+<!--SCRIPT SCHIMBA POZA DE FUNDAL-->
 <script>
-// Script to open and close sidebar
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-}
- 
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-}
+    function schimba() {
+        const img = ['url("poze/prima_poza/1.jpg")', 'url("poze/prima_poza/2.jpg")', 'url("poze/prima_poza/3.jpg")', 'url("poze/prima_poza/4.jpg")', 'url("poze/prima_poza/5.jpg")', 'url("poze/prima_poza/6.jpg")'];
+        const prima_poza = document.getElementById('prima_poza');
+        const bg = img[Math.floor(Math.random() * img.length)]
+        prima_poza.style.backgroundImage = bg;
+    }
+    setInterval(schimba, 5000)
 </script>
 
-</body>
 </html>
